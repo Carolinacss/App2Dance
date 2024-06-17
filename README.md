@@ -40,9 +40,7 @@ Essa tela será onde as informações de login serão mostradas ao usuário, com
 (professora não conseguimos trocar o usuário que está no link, por isso está com o nome do git da isabela).
 https://github.com/IsabelaCSS/Dance-App/wiki/Descri%C3%A7%C3%A3o-do-desenvolvimento-do-App
 
-# Telas Atualizadas
 
-https://github.com/IsabelaCSS/Dance-App/wiki/Tela-Atualizadas-Modificadas
 
 # App finalizado 
 
