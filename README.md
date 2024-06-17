@@ -43,3 +43,9 @@ https://github.com/IsabelaCSS/Dance-App/wiki/Descri%C3%A7%C3%A3o-do-desenvolvime
 # Telas Atualizadas
 
 https://github.com/IsabelaCSS/Dance-App/wiki/Tela-Atualizadas-Modificadas
+
+# App finalizado 
+
+https://github.com/Carolinacss/App2Dance/assets/128048493/c463ce9b-7672-4958-8c70-292b2068283f
+
+
