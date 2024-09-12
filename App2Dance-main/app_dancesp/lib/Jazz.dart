@@ -8,10 +8,163 @@ class Jazz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 58, 58, 58), // Cor de fundo cinza
+      backgroundColor: Colors.white, // Cor de fundo Branco
       body: Stack(
         fit: StackFit.expand,
         children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 30),
+              color: Color.fromARGB(255, 58, 58, 58), // Cor de fundo do texto
+              child: Center(
+                child: Text(
+                  'STREET DANCE',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned( //Imagem Ballet
+            top: 100,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 230,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/imgmoJazz.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 310,
+            left: 0,
+            right: 0,
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 30),
+              child: Center(
+                child: Text(
+                  'Escolha um grupo',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          // ListView horizontal de caixas de imagens com texto
+          Positioned(
+            top: 380,
+            left: 15,
+            right: 0,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 12.0),
+              child: Container(
+                height: 330,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    // Caixa 1 com imagem e navegação para Millenium
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Jazz()),
+                        );
+                      },
+                      child: Container(
+                        width: 320,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 58, 58, 58),
+                          borderRadius: BorderRadius.circular(15.0),
+                          image: DecorationImage(
+                            image: AssetImage('assets/millenium.png'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 10), // Espaçamento entre as caixas
+                    // Caixa 2 com imagem e texto (substituir com navegação se necessário)
+                    Container(
+                      width: 320,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 58, 58, 58),
+                        borderRadius: BorderRadius.circular(15.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/millenium.png'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Caixa 2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 10), // Espaçamento entre as caixas
+                    // Caixa 3 com imagem e texto (substituir com navegação se necessário)
+                    Container(
+                      width: 320,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 58, 58, 58),
+                        borderRadius: BorderRadius.circular(15.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/millenium.png'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Caixa 3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+               SizedBox(width: 10), // Espaçamento entre as caixas
+                    // Caixa 4 com imagem e navegação para Grupo 4
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Jazz()),
+                        );
+                      },
+                      child: Container(
+                        width: 320,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 58, 58, 58),
+                          borderRadius: BorderRadius.circular(15.0),
+                          image: DecorationImage(
+                            image: AssetImage('assets/millenium.png'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           // Rodapé com ícones de navegação e textos
           Positioned(
             bottom: 0,

@@ -5,7 +5,7 @@ import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
 // Definição da classe Millenium como um StatelessWidget
-class Millenium extends StatelessWidget {
+class Cybernetikos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

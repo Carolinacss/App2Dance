@@ -1,9 +1,11 @@
+import 'package:app_dancesp/Cybernetikos.dart';
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
 import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
 import 'Millenium.dart'; // Importe a tela Millenium.dart aqui (se necessário)
+
 
 class HipHop extends StatelessWidget {
   @override
@@ -96,9 +98,18 @@ class HipHop extends StatelessWidget {
                         ),
                       ),
                     ),
+
+                    
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 2 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Cybernetikos()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
@@ -118,9 +129,19 @@ class HipHop extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+
+
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 3 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                   GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Cybernetikos()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
@@ -132,7 +153,7 @@ class HipHop extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          'Caixa 3',
+                          'Caixa 4',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -140,11 +161,14 @@ class HipHop extends StatelessWidget {
                         ),
                       ),
                     ),
+                   ),
                   ],
                 ),
               ),
             ),
           ),
+
+
           // Rodapé com ícones de navegação e textos
           Positioned(
             bottom: 0,

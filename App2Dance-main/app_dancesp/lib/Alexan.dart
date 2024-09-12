@@ -1,4 +1,3 @@
-// Importação dos pacotes e arquivos necessários
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
 import 'Favoritos.dart'; // Importa a tela Favoritos.dart
@@ -29,6 +28,8 @@ class Millenium extends StatelessWidget {
                 ),
               ),
             ),
+
+            
             // Container exibindo uma imagem
             Container(
               height: 230,
@@ -40,6 +41,9 @@ class Millenium extends StatelessWidget {
               ),
             ),
             SizedBox(height: 5), // Espaçamento entre os widgets
+
+
+
             // Informações sobre o grupo em um Container colorido
             Container(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -55,6 +59,8 @@ class Millenium extends StatelessWidget {
                 ),
               ),
             ),
+
+
             SizedBox(height: 5),
             // Descrição da Millennium Dance Complex
             Container(
@@ -70,6 +76,9 @@ class Millenium extends StatelessWidget {
               ),
             ),
             SizedBox(height: 5),
+
+
+
             // Informações adicionais sobre turmas e endereço
             Container(
               padding: EdgeInsets.all(20),
@@ -99,6 +108,9 @@ class Millenium extends StatelessWidget {
           ],
         ),
       ),
+
+
+
       // Barra de navegação inferior (BottomNavigationBar)
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 58, 58, 58),
