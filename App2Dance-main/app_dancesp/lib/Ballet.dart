@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
 import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
-import 'QuemSomos.dart'; // Importe a tela Quemsomos.dart aqui
+import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
+import 'Allegro.dart'; // Importe a tela Millenium.dart aqui 
+import 'CisneNegro.dart';
+import 'LayllaLobo.dart';
+
 
 class Ballet extends StatelessWidget {
   @override
@@ -21,7 +25,7 @@ class Ballet extends StatelessWidget {
               color: Color.fromARGB(255, 58, 58, 58), // Cor de fundo do texto
               child: Center(
                 child: Text(
-                  'STREET DANCE',
+                  'BALLET',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -31,7 +35,7 @@ class Ballet extends StatelessWidget {
               ),
             ),
           ),
-          Positioned( //Imagem Ballet
+          Positioned( //Imagem HipHop
             top: 100,
             left: 0,
             right: 0,
@@ -75,12 +79,12 @@ class Ballet extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    // Caixa 1 com imagem e navegação para Millenium
+                    // Caixa 1 com imagem e navegação para Allegro
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Ballet()),
+                          MaterialPageRoute(builder: (context) => Allegro()),
                         );
                       },
                       child: Container(
@@ -95,15 +99,24 @@ class Ballet extends StatelessWidget {
                         ),
                       ),
                     ),
+
+                    
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 2 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Cisnenegro()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/millenium.png'),
+                          image: AssetImage('assets/cyber.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -117,21 +130,31 @@ class Ballet extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+
+
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 3 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                   GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Layllalobo()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/millenium.png'),
+                          image: AssetImage('assets/grupCyber.png'),
                           fit: BoxFit.cover,
                         ),
                       ),
                       child: Center(
                         child: Text(
-                          'Caixa 3',
+                          'Caixa 4',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -139,34 +162,15 @@ class Ballet extends StatelessWidget {
                         ),
                       ),
                     ),
-               SizedBox(width: 10), // Espaçamento entre as caixas
-                    // Caixa 4 com imagem e navegação para Grupo 4
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Ballet()),
-                        );
-                      },
-                      child: Container(
-                        width: 320,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 58, 58, 58),
-                          borderRadius: BorderRadius.circular(15.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/millenium.png'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ),
+                   ),
                   ],
                 ),
               ),
             ),
           ),
-          
-          // Rodapé com ícones de navegação
+
+
+          // Rodapé com ícones de navegação e textos
           Positioned(
             bottom: 0,
             left: 0,
@@ -174,7 +178,7 @@ class Ballet extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 10),
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 58, 58, 58), // Cor de fundo do rodapé
+                color: Color.fromARGB(255, 58, 58, 58),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

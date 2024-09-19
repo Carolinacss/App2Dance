@@ -5,7 +5,7 @@ import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
 // Definição da classe Millenium como um StatelessWidget
-class Alexan extends StatelessWidget {
+class Sam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,12 +14,12 @@ class Alexan extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Cabeçalho com o título 'STREET DANCE'
+            // Cabeçalho com o título 'JAZZ'
             Container(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
               child: Center(
                 child: Text(
-                  'STREET DANCE',
+                  'JAZZ',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class Alexan extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/millenium.png'), 
+                  image: AssetImage('assets/grupCyber.png'), 
                   fit: BoxFit.cover,
                 ),
               ),

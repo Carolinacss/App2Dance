@@ -1,8 +1,12 @@
+import 'package:app_dancesp/Sam.dart';
+import 'package:app_dancesp/WA.dart';
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
 import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
+import 'StudioL.dart'; // Importe a tela Millenium.dart aqui 
+
 
 class Jazz extends StatelessWidget {
   @override
@@ -31,7 +35,7 @@ class Jazz extends StatelessWidget {
               ),
             ),
           ),
-          Positioned( //Imagem Ballet
+          Positioned( //Imagem HipHop
             top: 100,
             left: 0,
             right: 0,
@@ -80,7 +84,7 @@ class Jazz extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Jazz()),
+                          MaterialPageRoute(builder: (context) => StudioL()),
                         );
                       },
                       child: Container(
@@ -95,15 +99,24 @@ class Jazz extends StatelessWidget {
                         ),
                       ),
                     ),
+
+                    
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 2 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Sam()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/millenium.png'),
+                          image: AssetImage('assets/cyber.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -117,21 +130,31 @@ class Jazz extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+
+
                     SizedBox(width: 10), // Espaçamento entre as caixas
                     // Caixa 3 com imagem e texto (substituir com navegação se necessário)
-                    Container(
+                   GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Wa()),
+                        );
+                      },
+                    child: Container(
                       width: 320,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/millenium.png'),
+                          image: AssetImage('assets/grupCyber.png'),
                           fit: BoxFit.cover,
                         ),
                       ),
                       child: Center(
                         child: Text(
-                          'Caixa 3',
+                          'Caixa 4',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -139,32 +162,14 @@ class Jazz extends StatelessWidget {
                         ),
                       ),
                     ),
-               SizedBox(width: 10), // Espaçamento entre as caixas
-                    // Caixa 4 com imagem e navegação para Grupo 4
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Jazz()),
-                        );
-                      },
-                      child: Container(
-                        width: 320,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 58, 58, 58),
-                          borderRadius: BorderRadius.circular(15.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/millenium.png'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ),
+                   ),
                   ],
                 ),
               ),
             ),
           ),
+
+
           // Rodapé com ícones de navegação e textos
           Positioned(
             bottom: 0,
@@ -178,6 +183,7 @@ class Jazz extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+                  // Ícone e texto para a tela Home
                   Column(
                     children: [
                       IconButton(
@@ -198,6 +204,7 @@ class Jazz extends StatelessWidget {
                       ),
                     ],
                   ),
+                  // Ícone e texto para a tela Quem Somos
                   Column(
                     children: [
                       IconButton(
@@ -218,6 +225,7 @@ class Jazz extends StatelessWidget {
                       ),
                     ],
                   ),
+                  // Ícone e texto para a tela Favoritos
                   Column(
                     children: [
                       IconButton(
@@ -238,6 +246,7 @@ class Jazz extends StatelessWidget {
                       ),
                     ],
                   ),
+                  // Ícone e texto para a tela Perfil
                   Column(
                     children: [
                       IconButton(

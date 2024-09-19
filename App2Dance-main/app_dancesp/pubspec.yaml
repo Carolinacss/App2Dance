@@ -28,8 +28,6 @@ flutter:
     - assets/imgmoBallet.png
     - assets/imgmoJazz.png
     - assets/grupHipHop.png
-#   - assets/grupBallet.png
-   # - assets/grupJazz.png
     - assets/millenium.png
-
-    # - images/a_dot_ham.jpeg
+    - assets/cyber.jpeg
+    - assets/alexa.png

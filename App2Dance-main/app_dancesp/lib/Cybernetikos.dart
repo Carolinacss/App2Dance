@@ -4,7 +4,7 @@ import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
-// Definição da classe Millenium como um StatelessWidget
+// Definição da classe Cybernetikos como um StatelessWidget
 class Cybernetikos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class Cybernetikos extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/millenium.png'), 
+                  image: AssetImage('assets/grupCyber.png'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +50,7 @@ class Cybernetikos extends StatelessWidget {
               color: Color.fromARGB(255, 30, 30, 30),
               child: Center(
                 child: Text(
-                  'CEO – Paula Tomazella & Milo Levell',
+                  'Diretor e Coordenador Everson Magnativa',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,

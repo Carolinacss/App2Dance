@@ -1,10 +1,11 @@
-import 'package:app_dancesp/Cybernetikos.dart';
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
 import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
-import 'Millenium.dart'; // Importe a tela Millenium.dart aqui (se necessário)
+import 'Millenium.dart'; // Importe a tela Millenium.dart aqui 
+import 'Cybernetikos.dart'; // Importe a tela Cybernétikos.dart aqui 
+import 'Alexan.dart';
 
 
 class HipHop extends StatelessWidget {
@@ -67,6 +68,7 @@ class HipHop extends StatelessWidget {
             ),
           ),
           // ListView horizontal de caixas de imagens com texto
+         // ListView horizontal de caixas de imagens com texto
           Positioned(
             top: 380,
             left: 15,
@@ -115,13 +117,13 @@ class HipHop extends StatelessWidget {
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/grupCyber.png'),
+                          image: AssetImage('assets/cyber.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
                       child: Center(
                         child: Text(
-                          'Caixa 2',
+                          '',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -138,7 +140,7 @@ class HipHop extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Cybernetikos()),
+                          MaterialPageRoute(builder: (context) => Alexan()),
                         );
                       },
                     child: Container(
@@ -147,13 +149,13 @@ class HipHop extends StatelessWidget {
                         color: Color.fromARGB(255, 58, 58, 58),
                         borderRadius: BorderRadius.circular(15.0),
                         image: DecorationImage(
-                          image: AssetImage('assets/grupCyber.png'),
+                          image: AssetImage('assets/alexa.png'),
                           fit: BoxFit.cover,
                         ),
                       ),
                       child: Center(
                         child: Text(
-                          'Caixa 4',
+                          '',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
