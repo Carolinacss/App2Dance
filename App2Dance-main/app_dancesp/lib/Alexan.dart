@@ -67,7 +67,7 @@ class Alexan extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'Academia Alexan | Academia de dança: Ballet clássico Jazz Teatro Dança do ventre Hip hop Ginástica artistica Baby class Zumba Sapateado Contemporâneo.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -84,7 +84,7 @@ class Alexan extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'BALLET, JAZZ, HIP HOP, TEATRO, DANÇA DO VENTRE, VÍDEO DANCE, FIT DANCE, GINÁSSTICA ARTÍSTICA, ZUMBA, SAPATEADO, COMTEMPORÂNEO',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,

@@ -67,7 +67,7 @@ class Millenium extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial, sendo conhecido como "o lugar onde tudo acontece". A Millennium é um lugar acolhedor e dedicado ao mais alto nível de serviço e instrução, pois todos os alunos tem a oportunidade de estudar com os melhores profissionais da indústria e se beneficiar de um amplo conhecimento no mundo artístico.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -81,10 +81,10 @@ class Millenium extends StatelessWidget {
 
             // Informações adicionais sobre turmas e endereço
             Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric (vertical: 20, horizontal: 60),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'Turmas: HIP HOP, JAZZ, COMTEMPORÂNEO E BALLET ',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class Millenium extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric (vertical: 20, horizontal: 68),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
                 'Endereço: Alameda dos Arapanés 1440, Moema - SP',

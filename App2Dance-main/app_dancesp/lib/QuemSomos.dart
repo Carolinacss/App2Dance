@@ -17,16 +17,16 @@ class QuemSomos extends StatelessWidget {
           ),
           // Container para posicionar o título "Quem Somos"
           Positioned(
-            top: 15, // Ajuste a posição vertical conforme necessário
+            top: 0, // Ajuste a posição vertical conforme necessário
             left: 0,
             right: 0,
             child: Container(
-              padding: EdgeInsets.symmetric(vertical: 20), // Espaçamento interno vertical
+              padding: EdgeInsets.symmetric(vertical: 10), // Espaçamento interno vertical
               child: Center(
                 child: Text(
                   'Quem Somos',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -36,7 +36,7 @@ class QuemSomos extends StatelessWidget {
           ),
           // Container para posicionar o texto "Criadores"
           Positioned(
-            top: 100, // Ajuste a posição vertical conforme necessário
+            top: 50, // Ajuste a posição vertical conforme necessário
             left: 0,
             right: 0,
             child: Container(
@@ -54,14 +54,14 @@ class QuemSomos extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 340, // Ajuste a posição vertical conforme necessário
+            top: 270, // Ajuste a posição vertical conforme necessário
             left: -5,
             right: 0,
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 10), // Espaçamento interno vertical
               child: Center(
                 child: Text(
-                  'Carolina de O. Alves                      Isabela de O. Alves',
+                  'Carolina de O. Alves                          Isabela de O. Alves',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -73,14 +73,16 @@ class QuemSomos extends StatelessWidget {
           ),
           // Container para posicionar o conteúdo sobre a imagem
           Positioned(
-            top: 400, // Posição vertical do topo em relação à imagem
+            top: 320, // Posição vertical do topo em relação à imagem
             left: -10,
-            right: -30,
+            right: -10,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Caixa de cor em torno do primeiro bloco de texto
                 Container(
+                  width: 550, // Largura desejada
+                  height: 130, // Altura desejada
                   padding: EdgeInsets.all(40), // Espaçamento interno da caixa
                   color: Colors.white, // Cor de fundo branca
                   child: RichText(
@@ -93,7 +95,7 @@ class QuemSomos extends StatelessWidget {
                       children: [
                         TextSpan(
                           text:
-                              'Somos um aplicativo de informações \nsobre grupos de dança em São Paulo.',
+                              'Somos um aplicativo de informações sobre grupos de dança em São Paulo.',
                         ),
                       ],
                     ),

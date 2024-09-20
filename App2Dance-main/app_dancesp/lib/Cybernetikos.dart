@@ -28,21 +28,17 @@ class Cybernetikos extends StatelessWidget {
                 ),
               ),
             ),
-
-            
             // Container exibindo uma imagem
             Container(
               height: 230,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/grupCyber.png'), 
+                  image: AssetImage('assets/Cybernetikos.png'), 
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             SizedBox(height: 5), // Espaçamento entre os widgets
-
-
 
             // Informações sobre o grupo em um Container colorido
             Container(
@@ -60,14 +56,13 @@ class Cybernetikos extends StatelessWidget {
               ),
             ),
 
-
             SizedBox(height: 5),
-            // Descrição da Millennium Dance Complex
+            // Descrição do Cybernétikos 
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'Foi fundada em 1998 na comunidade da São Remo, e seu primeiro nome foi cybernétikos Black. Conforme os anos, eles foram conquistando um espaço nas cenas das danças urbanas. E já conseguiram chegar na semifinal do mundial de dança.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -77,14 +72,12 @@ class Cybernetikos extends StatelessWidget {
             ),
             SizedBox(height: 5),
 
-
-
             // Informações adicionais sobre turmas e endereço
             Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric (vertical: 20, horizontal: 20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'Turmas: HIP HOP, BALLET, JAZZ, CIRCO & ACROBACIAS E PERCUSSÃO',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
