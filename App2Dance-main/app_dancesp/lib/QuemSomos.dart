@@ -114,7 +114,7 @@ class QuemSomos extends StatelessWidget {
                       children: [
                         TextSpan(
                           text:
-                              'Você vai visualizar grupos de dança de hip-hop, ballet e jazz em SP, onde \npoderá favoritar e ver as informações \ndos grupos.',
+                              'Você vai visualizar grupos de dança de hip-hop, ballet e jazz em SP, \e irá ver as informações \ndos grupos.',
                         ),
                       ],
                     ),
