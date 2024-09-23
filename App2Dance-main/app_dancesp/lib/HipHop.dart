@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart'; // Necessário para o suporte a gestos no web
 import 'package:flutter/services.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
-import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
 import 'Millenium.dart';
@@ -197,20 +196,6 @@ class HipHop extends StatelessWidget {
                         },
                       ),
                       Text('Quem Somos', style: TextStyle(color: Colors.white)),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Favoritos()),
-                          );
-                        },
-                      ),
-                      Text('Favoritos', style: TextStyle(color: Colors.white)),
                     ],
                   ),
                   Column(

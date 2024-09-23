@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -35,7 +34,7 @@ class Allegro extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/.png'), 
+                  image: AssetImage('assets/allegro2.jpeg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +49,7 @@ class Allegro extends StatelessWidget {
               color: Color.fromARGB(255, 30, 30, 30),
               child: Center(
                 child: Text(
-                  'CEO – Paula Tomazella & Milo Levell',
+                  'CEO – Letícia Bonatto',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -67,7 +66,7 @@ class Allegro extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'Fundado em setembro de 2000, um grupo de ballet contemporâneo que utiliza a construção erudita como base estrutural e, a partir dela, faz uma leitura corporal própria. Explorando novas movimentações, com referência no ballet clássico e nas escolas de Ballet Moderno.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -83,27 +82,31 @@ class Allegro extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+               child: Center(
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'BALLET',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
+               ),
             ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+               child: Center(
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
-                style: TextStyle(
+                'Endereço: R. Francisco Alves, 1207 - Paulicéia, São Bernardo do Campo - SP, 09692-100',
+                  style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
+               ),
             ),
           ],
         ),
@@ -159,27 +162,7 @@ class Allegro extends StatelessWidget {
                 ),
               ],
             ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
+           
             // Ícone e texto para a tela Perfil
             Column(
               children: [

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -76,6 +75,7 @@ class Cybernetikos extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric (vertical: 20, horizontal: 20),
               color: Color.fromARGB(255, 30, 30, 30),
+               child: Center(
               child: Text(
                 'Turmas: HIP HOP, BALLET, JAZZ, CIRCO & ACROBACIAS E PERCUSSÃO',
                 style: TextStyle(
@@ -84,13 +84,14 @@ class Cybernetikos extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+               ),
             ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
+                'Endereço: Avenida do Rio Pequeno, 892, Vila Dinorah, São Paulo - SP',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -152,27 +153,7 @@ class Cybernetikos extends StatelessWidget {
                 ),
               ],
             ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
+          
             // Ícone e texto para a tela Perfil
             Column(
               children: [

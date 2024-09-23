@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Perfil.dart'; 
-import 'Favoritos.dart';
 import 'Home.dart';
 import 'QuemSomos.dart';
 
@@ -181,26 +180,6 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Text(
                         'Quem Somos',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {
-                          // Navegar para a tela Favoritos ao pressionar o ícone
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Favoritos()),
-                          );
-                        },
-                      ),
-                      Text(
-                        'Favoritos',
                         style: TextStyle(
                           color: Colors.white,
                         ),

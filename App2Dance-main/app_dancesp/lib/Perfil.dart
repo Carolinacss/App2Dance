@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'Favoritos.dart'; // Importe o arquivo correto para Favoritos
 import 'QuemSomos.dart';
 import 'Home.dart';
 import 'LoginPage.dart';
@@ -91,43 +90,7 @@ class Perfil extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 30),
-                  SizedBox(
-                    width: double.infinity, // Ocupa toda a largura disponível
-                    child: ElevatedButton(
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                        textStyle: MaterialStateProperty.all<TextStyle>(
-                          TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(50.0),
-                          ),
-                        ),
-                        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                          EdgeInsets.symmetric(vertical: 16.0),
-                        ),
-                      ),
-                      onPressed: () {
-                        // Implemente aqui a ação desejada ao pressionar o botão
-                        // Por exemplo, navegar para a tela de Favoritos
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Favoritos()),
-                        );
-                      },
-                      child: Text('MEUS FAVORITOS'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+        SizedBox(height: 30),
           // Rodapé com ícones de navegação e textos
           Positioned(
             bottom: 0,
@@ -183,27 +146,6 @@ class Perfil extends StatelessWidget {
                       ),
                     ],
                   ),
-                  // Ícone e texto para a tela Favoritos
-                  Column(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {
-                          // Navegar para a tela Favoritos ao pressionar o ícone
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Favoritos()),
-                          );
-                        },
-                      ),
-                      Text(
-                        'Favoritos',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
                   // Ícone e texto para a tela Perfil
                   Column(
                     children: [
@@ -240,9 +182,13 @@ class Perfil extends StatelessWidget {
               child: Image.asset(
                 'assets/millenium.png', 
                 fit: BoxFit.cover,
-              ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
+        ),
         ],
       ),
     );

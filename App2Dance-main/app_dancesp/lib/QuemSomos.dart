@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
-import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 
 class QuemSomos extends StatelessWidget {
@@ -171,26 +170,6 @@ class QuemSomos extends StatelessWidget {
                       ),
                       Text(
                         'Quem Somos',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {
-                          // Navegar para a tela Favoritos
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Favoritos()),
-                          );
-                      },
-                      ),
-                      Text(
-                        'Favoritos',
                         style: TextStyle(
                           color: Colors.white,
                         ),

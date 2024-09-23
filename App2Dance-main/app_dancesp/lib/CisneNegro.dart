@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -19,7 +18,7 @@ class Cisnenegro extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
               child: Center(
                 child: Text(
-                  'STREET DANCE',
+                  'BALLET',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -35,7 +34,7 @@ class Cisnenegro extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/grupCyber.png'), 
+                  image: AssetImage('assets/cisnenegro2.jpg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +49,7 @@ class Cisnenegro extends StatelessWidget {
               color: Color.fromARGB(255, 30, 30, 30),
               child: Center(
                 child: Text(
-                  'CEO – Paula Tomazella & Milo Levell',
+                  'CEO – Hulda Bittencourt',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -67,7 +66,7 @@ class Cisnenegro extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'Cisne Negro Companhia de Dança é uma companhia de dança brasileira criada em 1977 na cidade de São Paulo. O nome veio de um pas de deux do balé O Lago dos Cisnes. A companhia é dirigida por Hulda Bittencourt.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -83,26 +82,30 @@ class Cisnenegro extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+              child: Center(
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'JAZZ, BALLET',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
+              ),
             ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+              child: Center(
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
+                'Endereço: Rua Aliança Liberal, 970 – Vila Leopoldina',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
+              ),
               ),
             ),
           ],
@@ -153,27 +156,6 @@ class Cisnenegro extends StatelessWidget {
                 ),
                 Text(
                   'Quem Somos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
                   style: TextStyle(
                     color: Colors.white,
                   ),

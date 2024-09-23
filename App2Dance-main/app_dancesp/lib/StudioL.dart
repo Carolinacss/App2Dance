@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -35,7 +34,7 @@ class StudioL extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/grupCyber.png'), 
+                  image: AssetImage('assets/estudiol2.jpg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +49,7 @@ class StudioL extends StatelessWidget {
               color: Color.fromARGB(255, 30, 30, 30),
               child: Center(
                 child: Text(
-                  'CEO – Paula Tomazella & Milo Levell',
+                  'CEO – Luciene Almeida',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -67,7 +66,7 @@ class StudioL extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'O Estúdio L ponto de dança, ele é voltado diretamente para o jazz e o ballet. Um grupo que já tem muitas premiações. Tanto em jazz quanto em dança clássica. ',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -83,8 +82,9 @@ class StudioL extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+              child:Center(
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'JAZZ, BALLET',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -92,12 +92,13 @@ class StudioL extends StatelessWidget {
                 ),
               ),
             ),
+            ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
+                'Endereço: Rua Brigadeiro Henrique Fontenelle, 418, Parque São Domingos, São Paulo - SP',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -153,27 +154,6 @@ class StudioL extends StatelessWidget {
                 ),
                 Text(
                   'Quem Somos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
                   style: TextStyle(
                     color: Colors.white,
                   ),

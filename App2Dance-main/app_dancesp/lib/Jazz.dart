@@ -2,7 +2,6 @@ import 'package:flutter/gestures.dart'; // Necessário para o suporte a gestos n
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importe a tela Home.dart aqui
-import 'Favoritos.dart'; // Importe a tela Favoritos.dart aqui
 import 'LoginPage.dart'; // Importe a tela Perfil.dart aqui
 import 'QuemSomos.dart'; // Importe a tela QuemSomos.dart aqui
 import 'StudioL.dart'; // Importe a tela StudioL.dart aqui 
@@ -97,7 +96,7 @@ class Jazz extends StatelessWidget {
                             color: Color.fromARGB(255, 58, 58, 58),
                             borderRadius: BorderRadius.circular(15.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/millenium.png'),
+                              image: AssetImage('assets/estudiol.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -117,7 +116,7 @@ class Jazz extends StatelessWidget {
                             color: Color.fromARGB(255, 58, 58, 58),
                             borderRadius: BorderRadius.circular(15.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/cyber.jpeg'),
+                              image: AssetImage('assets/wa.png'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -146,7 +145,7 @@ class Jazz extends StatelessWidget {
                             color: Color.fromARGB(255, 58, 58, 58),
                             borderRadius: BorderRadius.circular(15.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/alexa.png'),
+                              image: AssetImage('assets/sam.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -197,20 +196,6 @@ class Jazz extends StatelessWidget {
                         },
                       ),
                       Text('Quem Somos', style: TextStyle(color: Colors.white)),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Favoritos()),
-                          );
-                        },
-                      ),
-                      Text('Favoritos', style: TextStyle(color: Colors.white)),
                     ],
                   ),
                   Column(

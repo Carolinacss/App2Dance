@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -19,7 +18,7 @@ class Layllalobo extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
               child: Center(
                 child: Text(
-                  'STREET DANCE',
+                  'BALLET',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -35,7 +34,7 @@ class Layllalobo extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/grupCyber.png'), 
+                  image: AssetImage('assets/layllalobo2.jpg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +49,7 @@ class Layllalobo extends StatelessWidget {
               color: Color.fromARGB(255, 30, 30, 30),
               child: Center(
                 child: Text(
-                  'CEO – Paula Tomazella & Milo Levell',
+                  'CEO – Laylla Lobo',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -67,7 +66,7 @@ class Layllalobo extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                'Escola de Ballet Layla Lobo — Prontos para guiá-la em direção aos seus objetivos, em um ambiente acolhedor e amigável, Nós queremosde você para ajudar a realizar seu sonho na dança, Experiência profissional. Bem estar é prioridade. Invista em você. Agende sua aula agora.',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -83,8 +82,9 @@ class Layllalobo extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+              child:Center(
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'JAZZ, BALLET',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -92,18 +92,21 @@ class Layllalobo extends StatelessWidget {
                 ),
               ),
             ),
+            ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+               child: Center(
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
+                'Endereço: Rua Cotoxó, 1093, 4º andar, Perdizes, São Paulo - SP',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
+            ),
             ),
           ],
         ),
@@ -159,27 +162,7 @@ class Layllalobo extends StatelessWidget {
                 ),
               ],
             ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
+
             // Ícone e texto para a tela Perfil
             Column(
               children: [

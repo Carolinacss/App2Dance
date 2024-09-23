@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'Home.dart'; // Importa a tela Home.dart
-import 'Favoritos.dart'; // Importa a tela Favoritos.dart
 import 'LoginPage.dart'; // Importa a tela Perfil.dart
 import 'QuemSomos.dart'; // Importa a tela QuemSomos.dart
 
@@ -35,7 +35,7 @@ class Sam extends StatelessWidget {
               height: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/grupCyber.png'), 
+                  image: AssetImage('assets/sam2.jpeg'), 
                   fit: BoxFit.cover,
                 ),
               ),
@@ -67,7 +67,7 @@ class Sam extends StatelessWidget {
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
               child: Text(
-                'A Millennium Dance Complex é conhecida mundialmente como o primeiro estúdio do mundo da dança comercial...',
+                ' O Grupo Sam nasceu há mais de 40 anos dentro da Rede Mater Dei de Saúde e somos a empresa de anestesiologia exclusiva desse que é um dos maiores e mais renomados grupos hospitalares do país, o que garante aos nossos pacientes acesso aos melhores recursos e tecnologias disponíveis no mercado',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -83,27 +83,31 @@ class Sam extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+              child:Center(
               child: Text(
-                'Turmas: 3° e 5°: Bruno Barbosa, Gabriela Mak, Jay Silva. \n2° e 4°: Caco Aniceto, Tarik Henrique, Thiago Vianna e Tiago Montalti.',
+                'JAZZ',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
+              ),
               ),
             ),
             SizedBox(height: 5),
             Container(
               padding: EdgeInsets.all(20),
               color: Color.fromARGB(255, 30, 30, 30),
+               child: Center(
               child: Text(
-                'Endereço: Alameda dos Arapanés 1440, Moema - SP',
+                'Endereço: Rua Virgilio, 108, Vila Prudente, São Paulo - SP ',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
+               ),
             ),
           ],
         ),
@@ -153,27 +157,6 @@ class Sam extends StatelessWidget {
                 ),
                 Text(
                   'Quem Somos',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-            // Ícone e texto para a tela Favoritos
-            Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite, color: Colors.white),
-                  onPressed: () {
-                    // Navegar para a tela Favoritos
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Favoritos()),
-                    );
-                  },
-                ),
-                Text(
-                  'Favoritos',
                   style: TextStyle(
                     color: Colors.white,
                   ),
